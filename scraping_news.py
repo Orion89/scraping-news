@@ -7,11 +7,14 @@ from logging.handlers import RotatingFileHandler
 import os
 import time
 
+from dotenv import load_dotenv
 import newspaper
 from newspaper import Article, Config, build
 import psycopg
 from psycopg import sql
 from psycopg_pool import ConnectionPool
+
+load_dotenv()
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
