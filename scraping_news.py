@@ -1,5 +1,6 @@
 import concurrent.futures
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import gc
 import hashlib
 import json
 import logging
@@ -49,7 +50,7 @@ if not DB_CONNINFO:
     )
     exit(1)
 
-MAX_WORKERS = 10
+MAX_WORKERS = 7
 
 # 1. Configuración global del scraper (User-Agent realista y Timeouts)
 scraper_config = Config()
@@ -155,12 +156,13 @@ def news_extractor_per_media(
                 cursor.executemany(query, params_batch)
                 conn.commit()
                 params_batch = []  # Limpieza de memoria (reasignación de lista)
-
+            del art
         # Insertar los elementos restantes que no alcanzaron el múltiplo de 'batch_size'
         if params_batch:
             cursor.executemany(query, params_batch)
             conn.commit()
-
+    del source
+    gc.collect()  # Forzar recolección de basura para liberar memoria
     # 5. Log de métricas consolidado final
     logger.info(
         f"[{country_name.upper()}] Finalizado {media_source} | "

@@ -935,6 +935,7 @@ medios = {
     ],
     "tecnologia": [
         "https://www.xataka.com/",
+        "https://www.xatakamovil.com/",
         "https://www.muycomputer.com/noticias/",
         "https://computerhoy.com/noticias",
         "https://www.genbeta.com/",
@@ -943,15 +944,26 @@ medios = {
         "https://www.softzone.es/noticias/",
         "https://es.cointelegraph.com/",
         # 'https://hipertextual.com/'
+        "https://www.profesionalreview.com/",
+        "https://elchapuzasinformatico.com/",
+        "https://www.unocero.com/",
     ],
     "internacional": [
         "https://cnnespanol.cnn.com/",
         "https://actualidad.rt.com/",
-        "https://israelnoticias.com/",
+        "https://www.eliberico.com/",  # Inglaterra
+        "https://israelnoticias.com/",  # Israel
+        "https://www.latundra.com/",  # Inglaterra
         "https://www.enlacejudio.com/category/noticias/noticias-de-israel/",
         "https://reporteasia.com/",
         "https://www.casafrica.es/es/africaesnoticia",
         "https://www.revistadefrente.cl/",
+        "https://www.aurora-israel.co.il/",  # Israel
+        "https://espanol.almayadeen.net/",  # Líbano
+        "https://revista.carayanpress.com/",  # Filipinas
+        "https://noticias.jp/",  # Japón
+        "https://www.correo.ca/",  # Canadá
+        "https://chha1610am.ca/",  # Canadá
     ],
     "religion": [
         "https://adventist.news/es/news",
@@ -972,8 +984,13 @@ medios = {
         "https://as.com/meristation/noticias/",
         "https://www.gamereactor.es/noticias/",
     ],
+    "ciencia": [
+        "https://www.agenciasinc.es/",
+        "https://www.xatakaciencia.com/",
+        "https://theconversation.com/es",
+    ],
 }
 
 # Escritura segura especificando UTF-8
-with open("./medios_list.json", "w", encoding="utf-8") as archivo_escritura:
+with open("medios_list.json", "w", encoding="utf-8") as archivo_escritura:
     json.dump(medios, archivo_escritura, indent=4)
