@@ -104,7 +104,9 @@ def news_extractor_per_media(
         return
 
     with conn.cursor() as cursor:
-        for art in source.articles:
+        for art in source.articles[
+            :500
+        ]:  # Limitar a los primeros 500 artículos para evitar sobrecarga
             try:
                 # Descarga y parseo del artículo
                 art.download()
