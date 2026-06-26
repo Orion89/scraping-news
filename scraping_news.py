@@ -60,6 +60,14 @@ scraper_config.memoize_articles = False
 scraper_config.fetch_images = False
 scraper_config.language = "es"
 
+# Contenido a ignorar
+pdf_defaults = {
+    "application/pdf": "%PDF-",
+    "application/x-pdf": "%PDF-",
+    "application/x-bzpdf": "%PDF-",
+    "application/x-gzpdf": "%PDF-",
+}
+
 
 def load_media_config(filepath: str = "medios_list.json") -> dict:
     """
@@ -96,7 +104,11 @@ def news_extractor_per_media(
 
     # Intentar acceder a la fuente principal
     try:
-        source = build(media_source, config=scraper_config)
+        source = build(
+            media_source,
+            config=scraper_config,
+            ignored_content_types_defaults=pdf_defaults,
+        )
     except Exception as e:
         logger.error(
             f"[{country_name.upper()}] Error crítico accediendo a la fuente principal {media_source}: {e}"
