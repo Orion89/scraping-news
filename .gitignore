@@ -1,4 +1,5 @@
 .env
+.backups
 *.ipynb
 .vscode
 logs

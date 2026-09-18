@@ -4,3 +4,5 @@ psycopg==3.3.4
 psycopg-binary==3.3.4
 psycopg-pool==3.3.1
 python-dotenv==1.2.2
+pyyaml==6.0.3
+stealth_requests==2.0.6

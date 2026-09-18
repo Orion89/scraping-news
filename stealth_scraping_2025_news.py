@@ -7,53 +7,92 @@ import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import psycopg
-import requests
+import yaml
 from newspaper import Article, Config
 from psycopg import sql
 from psycopg_pool import ConnectionPool
 
-# Configuración básica de logs
+
+# ---------------------------------------------------------
+# 1. CARGA DE CONFIGURACIÓN YAML
+# ---------------------------------------------------------
+def load_config(yaml_path="config.yaml"):
+    with open(yaml_path, "r", encoding="utf-8") as f:
+        return yaml.safe_load(f)
+
+
+app_config = load_config()
+script_cfg = app_config.get("script", {})
+news_cfg = app_config.get("newspaper", {})
+
+# ---------------------------------------------------------
+# 2. CONFIGURACIÓN DE LOGS (CONSOLA Y ARCHIVO)
+# ---------------------------------------------------------
+# El FileHandler mantiene el archivo abierto y es "thread-safe",
+# siendo la forma más eficiente de volcar logs masivos en disco.
+log_file = script_cfg.get("log_file", "scraping_2025.log")
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] - %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[
+        logging.FileHandler(log_file, mode="a", encoding="utf-8"),
+        logging.StreamHandler(),
+    ],
 )
 logger = logging.getLogger(__name__)
 
+# ---------------------------------------------------------
+# 3. SELECCIÓN DINÁMICA DEL CLIENTE HTTP
+# ---------------------------------------------------------
+req_client_name = script_cfg.get("request_client", "requests")
+if req_client_name == "stealth_requests":
+    # stealth_requests imita la API de requests perfectamente
+    import stealth_requests as http_client
+
+    logger.info("Cliente HTTP seleccionado: stealth_requests (mimics Chrome)")
+else:
+    import requests as http_client
+
+    logger.info("Cliente HTTP seleccionado: requests estándar")
+
+# ---------------------------------------------------------
+# 4. VARIABLES GLOBALES Y DB
+# ---------------------------------------------------------
 DB_CONNINFO = os.getenv(
     "POSTGRES_URI", "postgresql://postgres:0rioN-689@localhost:5432/news"
 )
+MAX_WORKERS = script_cfg.get("max_workers", 6)
+BATCH_SIZE = script_cfg.get("batch_size", 50)
+JSON_INPUT_PATH = script_cfg.get("input_json", "gap_noticias_2025.json")
 
-# LIMITAMOS a 5 workers máximo para proteger la memoria RAM al procesar 200k+ enlaces
-MAX_WORKERS = 6
-BATCH_SIZE = 50
-
-# Configuración del scraper: Crucial tener un timeout bajo para no colgar hilos con webs muertas
+# ---------------------------------------------------------
+# 5. CONFIGURACIÓN DEL SCRAPER (NEWSPAPER4K)
+# ---------------------------------------------------------
 scraper_config = Config()
-scraper_config.browser_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-scraper_config.request_timeout = 10
-scraper_config.memoize_articles = False
-scraper_config.fetch_images = False
-scraper_config.language = "es"
+scraper_config.browser_user_agent = news_cfg.get(
+    "browser_user_agent",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+)
+scraper_config.request_timeout = news_cfg.get("request_timeout", 10)
+scraper_config.memoize_articles = news_cfg.get("memoize_articles", False)
+scraper_config.fetch_images = news_cfg.get("fetch_images", False)
+scraper_config.language = news_cfg.get("language", "es")
 
 
 def load_and_flatten_json(filepath: str, batch_size: int) -> list[tuple]:
     """
-    Lee el JSON anidado y lo aplana en 'paquetes' de tareas.
-    Retorna una lista de tuplas: (pais, nombre_medio, lista_de_urls_del_lote)
+    Lee el JSON anidado y lo aplana en 'paquetes' de tareas[cite: 5].
     """
     with open(filepath, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     tasks = []
-    # Iterar sobre el JSON: data[país][medio][año] = [urls...]
     for country, media_dict in data.items():
-        # Normalizamos el nombre del país para que coincida con tus tablas (ej. "Argentina" -> "argentina")
         country_clean = country.strip().lower()
 
         for media_name, years_dict in media_dict.items():
             for year, urls in years_dict.items():
-                # Dividir la lista de miles de URLs en pequeños lotes (chunks)
                 for i in range(0, len(urls), batch_size):
                     batch_urls = urls[i : i + batch_size]
                     tasks.append((country_clean, media_name, batch_urls))
@@ -67,10 +106,6 @@ def load_and_flatten_json(filepath: str, batch_size: int) -> list[tuple]:
 def process_url_batch(
     country_name: str, media_name: str, urls: list[str], pool: ConnectionPool
 ) -> None:
-    """
-    Toma un lote de URLs, descarga el HTML concurrentemente (muy rápido, baja RAM),
-    parsea secuencialmente (protege RAM), e inserta el lote en DB.
-    """
     table_name = f"news_{country_name}"
 
     query = sql.SQL("""
@@ -82,33 +117,25 @@ def process_url_batch(
     params_batch = []
     stats = {"exitos": 0, "omitidos": 0, "errores": 0}
 
-    # ---------------------------------------------------------
-    # MEJORA DE VELOCIDAD: DESCARGA DE RED CONCURRENTE
-    # ---------------------------------------------------------
     html_results = []
-    # Usamos el mismo User-Agent definido en tu configuración
     headers = {"User-Agent": scraper_config.browser_user_agent}
 
     def fetch_url(url):
         try:
-            # timeout corto alineado con tu scraper_config
-            response = requests.get(
+            # Usamos el cliente HTTP dinámico (requests o stealth_requests)
+            response = http_client.get(
                 url, headers=headers, timeout=scraper_config.request_timeout
             )
             if response.status_code == 200:
                 return url, response.text
         except Exception as e:
+            # Este log quedará guardado permanentemente en el archivo de texto
             logger.error(f"Error crítico al intentar descarga {url}: {e}")
-            pass
         return url, None
 
-    # Descargamos las 50 URLs de este lote al mismo tiempo usando un sub-pool temporal
     with ThreadPoolExecutor(max_workers=20) as io_executor:
         html_results = list(io_executor.map(fetch_url, urls))
 
-    # ---------------------------------------------------------
-    # PARSEO SECUENCIAL (Protección de RAM)
-    # ---------------------------------------------------------
     for url, html_content in html_results:
         if not html_content:
             stats["errores"] += 1
@@ -116,13 +143,9 @@ def process_url_batch(
 
         try:
             art = Article(url, config=scraper_config)
-
-            # ¡EL TRUCO! Le pasamos el HTML directamente a newspaper.
-            # Esto evita que newspaper intente descargar la URL de nuevo.
             art.download(input_html=html_content)
             art.parse()
 
-            # Validación de contenido[cite: 3]
             if not (art.is_valid_body() and art.meta_lang == "es"):
                 stats["omitidos"] += 1
                 del art
@@ -134,7 +157,6 @@ def process_url_batch(
                 del art
                 continue
 
-            # Generación de Hash[cite: 3]
             body_hash = hashlib.md5(body_text.encode("utf-8")).hexdigest()
 
             params_batch.append(
@@ -147,30 +169,25 @@ def process_url_batch(
                     "body_hash": body_hash,
                 }
             )
-
             stats["exitos"] += 1
-
-            # LIBERACIÓN DE MEMORIA INMEDIATA[cite: 3]
             del art
 
         except Exception as e:
             stats["errores"] += 1
+            logger.error(f"Error parseando HTML para {url}: {e}")
             continue
 
-    # 2. Inserción masiva en base de datos si hubo éxitos[cite: 3]
     if params_batch:
         try:
-            with pool.connection() as conn:
-                with conn.cursor() as cursor:
-                    cursor.executemany(query, params_batch)
-                    conn.commit()
+            with pool.connection() as conn, conn.cursor() as cursor:
+                cursor.executemany(query, params_batch)
+                conn.commit()
         except Exception as e:
             logger.error(
                 f"[{country_name.upper()}] Error crítico insertando lote de {media_name} en DB: {e}"
             )
             return
 
-    # 3. Forzar limpieza profunda de RAM tras procesar el lote completo[cite: 3]
     del params_batch
     del html_results
     gc.collect()
@@ -182,37 +199,36 @@ def process_url_batch(
 
 
 def run_massive_extraction(json_filepath: str) -> None:
-    # 1. Cargar y preparar los datos
     try:
         tasks = load_and_flatten_json(json_filepath, batch_size=BATCH_SIZE)
     except Exception as e:
         logger.critical(f"Error cargando el archivo JSON de URLs: {e}")
         return
 
-    # 2. Iniciar el Pool de base de datos y el Pool de Hilos
-    with ConnectionPool(conninfo=DB_CONNINFO, min_size=2, max_size=MAX_WORKERS) as pool:
-        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-            # Mapeamos los futures para gestionar errores
-            futures = {
-                executor.submit(process_url_batch, country, media, urls, pool): (
-                    country,
-                    media,
-                )
-                for country, media, urls in tasks
-            }
+    with (
+        ConnectionPool(conninfo=DB_CONNINFO, min_size=2, max_size=MAX_WORKERS) as pool,
+        ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor,
+    ):
+        futures = {
+            executor.submit(process_url_batch, country, media, urls, pool): (
+                country,
+                media,
+            )
+            for country, media, urls in tasks
+        }
 
-            for future in as_completed(futures):
-                country, media = futures[future]
-                try:
-                    future.result()
-                except Exception as exc:
-                    logger.error(
-                        f"[{country.upper()}] Falló catastróficamente un worker para el medio {media}: {exc}"
-                    )
+        for future in as_completed(futures):
+            country, media = futures[future]
+            try:
+                future.result()
+            except Exception as exc:
+                logger.error(
+                    f"[{country.upper()}] Falló catastróficamente un worker para el medio {media}: {exc}"
+                )
 
     logger.info("¡Extracción de gap 2025 finalizada por completo!")
 
 
 if __name__ == "__main__":
-    # Sustituye por el nombre real de tu archivo JSON
-    run_massive_extraction("gap_noticias_2025.json")
+    # Usa la ruta proveniente del YAML para iniciar el proceso
+    run_massive_extraction(JSON_INPUT_PATH)

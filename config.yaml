@@ -1,0 +1,14 @@
+script:
+  max_workers: 6
+  batch_size: 50
+  input_json: "./data/news_urls_2025.json"
+  log_file: "scraping_2025_errores.log"
+  # Opciones válidas: "requests" o "stealth_requests"
+  request_client: "stealth_requests"
+
+newspaper:
+  browser_user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  request_timeout: 10
+  memoize_articles: false
+  fetch_images: false
+  language: "es"
