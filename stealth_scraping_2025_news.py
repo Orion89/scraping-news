@@ -59,9 +59,7 @@ else:
 # ---------------------------------------------------------
 # 4. VARIABLES GLOBALES Y DB
 # ---------------------------------------------------------
-DB_CONNINFO = os.getenv(
-    "POSTGRES_URI", "postgresql://postgres:0rioN-689@localhost:5432/news"
-)
+DB_CONNINFO = os.getenv("POSTGRES_URI", None)
 MAX_WORKERS = script_cfg.get("max_workers", 6)
 BATCH_SIZE = script_cfg.get("batch_size", 50)
 JSON_INPUT_PATH = script_cfg.get("input_json", "gap_noticias_2025.json")
