@@ -1,7 +1,14 @@
 import logging
 import os
+from pathlib import Path
+from dotenv import load_dotenv
 import psycopg
 from psycopg import sql
+
+# Cargar .env desde la raíz del proyecto o desde el entorno actual
+ENV_PATH = Path(__file__).resolve().parent.parent / ".env"
+load_dotenv(dotenv_path=ENV_PATH)
+load_dotenv()
 
 # Configuración del log
 logging.basicConfig(

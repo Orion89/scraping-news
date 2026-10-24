@@ -1,12 +1,17 @@
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 import psycopg
 from psycopg import sql
 
+# Cargar .env desde la raíz del proyecto o desde el entorno actual
+ENV_PATH = Path(__file__).resolve().parent.parent / ".env"
+load_dotenv(dotenv_path=ENV_PATH)
 load_dotenv()
+
 DB_CONNINFO = os.getenv("POSTGRES_URI", None)
 if not DB_CONNINFO:
-    raise ValueError("La variable de entorno DB_CONNINFO no está definida.")
+    raise ValueError("La variable de entorno POSTGRES_URI no está definida.")
 
 with psycopg.connect(DB_CONNINFO) as conn:
     with conn.cursor() as cursor:

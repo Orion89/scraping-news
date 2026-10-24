@@ -6,6 +6,7 @@ import json
 import logging
 from logging.handlers import RotatingFileHandler
 import os
+import threading
 import time
 
 from dotenv import load_dotenv
@@ -41,6 +42,64 @@ file_handler.setFormatter(formatter)
 if not logger.handlers:
     logger.addHandler(console_handler)
     logger.addHandler(file_handler)
+
+# ---------------------------------------------------------------------------
+# Configuración del registro de medios fallidos
+# Guarda las URLs limpias en failed_urls.txt y el detalle en failed_media_details.txt
+# ---------------------------------------------------------------------------
+FAILED_MEDIA_DIR = "failed_media"
+FAILED_URLS_FILE = os.path.join(FAILED_MEDIA_DIR, "failed_urls.txt")
+FAILED_DETAILS_FILE = os.path.join(FAILED_MEDIA_DIR, "failed_media_details.txt")
+_failed_media_lock = threading.Lock()
+_recorded_failed_urls = set()
+
+
+def _init_failed_media_tracker() -> None:
+    """Inicializa la carpeta y carga URLs previamente registradas para evitar duplicados."""
+    os.makedirs(FAILED_MEDIA_DIR, exist_ok=True)
+    if os.path.exists(FAILED_URLS_FILE):
+        try:
+            with open(FAILED_URLS_FILE, "r", encoding="utf-8") as f:
+                for line in f:
+                    url = line.strip()
+                    if url and not url.startswith("#"):
+                        _recorded_failed_urls.add(url)
+        except Exception:
+            pass
+
+
+_init_failed_media_tracker()
+
+
+def record_failed_media(
+    country_name: str,
+    media_source: str,
+    error_msg: str,
+    error_type: str = "build_error",
+) -> None:
+    """
+    Registra de forma segura entre hilos (thread-safe) los medios que dan error.
+    - failed_urls.txt: Lista limpia de URLs únicas (para fácil lectura/filtrado).
+    - failed_media_details.txt: Detalle con fecha, país, URL, tipo de error y mensaje.
+    """
+    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+    with _failed_media_lock:
+        try:
+            os.makedirs(FAILED_MEDIA_DIR, exist_ok=True)
+            with open(FAILED_DETAILS_FILE, "a", encoding="utf-8") as f_det:
+                f_det.write(
+                    f"{timestamp} | [{country_name.upper()}] | {media_source} | {error_type} | {error_msg}\n"
+                )
+
+            if media_source not in _recorded_failed_urls:
+                _recorded_failed_urls.add(media_source)
+                with open(FAILED_URLS_FILE, "a", encoding="utf-8") as f_urls:
+                    f_urls.write(f"{media_source}\n")
+        except Exception as e:
+            logger.error(
+                f"No se pudo escribir en el registro de medios fallidos para {media_source}: {e}"
+            )
+
 
 # Configuración de base de datos y workers
 DB_CONNINFO = os.getenv("POSTGRES_URI", None)
@@ -113,7 +172,15 @@ def news_extractor_per_media(
         logger.error(
             f"[{country_name.upper()}] Error crítico accediendo a la fuente principal {media_source}: {e}"
         )
+        record_failed_media(
+            country_name=country_name,
+            media_source=media_source,
+            error_msg=str(e),
+            error_type="Error crítico build()",
+        )
         return
+
+    total_articles = len(source.articles)
 
     with conn.cursor() as cursor:
         for art in source.articles[
@@ -185,6 +252,23 @@ def news_extractor_per_media(
         f"Errores: {stats['errores']}"
     )
 
+    # 6. Registro de medios fallidos (si no se extrajo ninguna noticia válida)
+    if stats["exitos_extraidos"] == 0:
+        if total_articles == 0:
+            record_failed_media(
+                country_name=country_name,
+                media_source=media_source,
+                error_msg="No se detectaron artículos en la fuente (0 artículos)",
+                error_type="Sin artículos detectados",
+            )
+        elif stats["errores"] > 0:
+            record_failed_media(
+                country_name=country_name,
+                media_source=media_source,
+                error_msg=f"Todos los artículos fallaron en descarga/parseo ({stats['errores']} errores)",
+                error_type="Fallo total artículos",
+            )
+
 
 def process_url(country_name: str, url: str, pool: ConnectionPool) -> None:
     """Tarea unitaria: una URL → una llamada a news_extractor_per_media."""
@@ -222,6 +306,12 @@ def run_extraction(json_filepath: str = "medios_list.json") -> None:
                     future.result()
                 except Exception as exc:
                     logger.error(f"Error procesando {url} del país {country}: {exc}")
+                    record_failed_media(
+                        country_name=country,
+                        media_source=url,
+                        error_msg=str(exc),
+                        error_type="Excepción no controlada",
+                    )
 
 
 if __name__ == "__main__":
