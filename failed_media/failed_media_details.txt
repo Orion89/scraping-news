@@ -1,0 +1,417 @@
+2026-10-25 11:26:17 | [CHILE] | https://www.encancha.cl/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (435 errores)
+2026-10-25 11:27:26 | [CHILE] | http://www.soyantofagasta.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 11:30:04 | [CHILE] | http://www.soycalama.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 11:31:02 | [CHILE] | http://www.soyarica.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 11:34:16 | [CHILE] | https://www.chasquis.cl/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (1 errores)
+2026-10-25 11:40:16 | [CHILE] | http://www.soycopiapo.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 11:46:00 | [CHILE] | https://www.chanarcillo.cl/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 11:47:27 | [CHILE] | http://www.elpatagondomingo.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 11:47:28 | [CHILE] | https://aysenahora.cl/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 11:47:32 | [CHILE] | https://www.biobiochile.cl/ | Error crítico build() | Article is binary data: https://www.biobiochile.cl/frecuencias_rbb.pdf
+2026-10-25 11:47:34 | [CHILE] | http://www.soyconcepcion.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 11:47:35 | [CHILE] | https://www.pagina7.cl/ | Error crítico build() | Article is binary data: https://www.pagina7.cl/privacidad.pdf
+2026-10-25 11:53:48 | [CHILE] | https://www.elovallino.cl/ | Error crítico build() | Article is binary data: https://www.elovallino.cl/tdn_pic_2
+2026-10-25 11:57:49 | [CHILE] | https://www.elregional.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 11:59:57 | [CHILE] | http://www.soytemuco.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 11:59:58 | [CHILE] | https://www.araucaniadiario.cl/ | Error crítico build() | Http error when downloading https://www.araucaniadiario.cl/. Status code: 403
+2026-10-25 12:19:21 | [CHILE] | https://www.eldiariodelaaraucania.cl/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 12:20:08 | [CHILE] | http://www.soypuertomontt.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 12:21:17 | [CHILE] | https://www.elconquistadorfm.net/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 12:23:36 | [CHILE] | http://www.soyosorno.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 12:23:39 | [CHILE] | https://www.paislobo.cl/ | Error crítico build() | Article is binary data: https://www.paislobo.cl/favicon.ico
+2026-10-25 12:25:32 | [CHILE] | http://www.soychiloe.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 12:29:01 | [CHILE] | https://www.elhuemul.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 12:35:37 | [CHILE] | https://www.soychile.cl/valdivia/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (10 errores)
+2026-10-25 12:39:46 | [CHILE] | https://www.losriosaldia.cl/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (46 errores)
+2026-10-25 12:42:50 | [CHILE] | https://www.eldiariopanguipulli.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 12:42:57 | [CHILE] | https://centralnoticias.cl/ | Error crítico build() | Article is binary data: https://centralnoticias.cl/?feed=comments-rss2
+2026-10-25 12:50:36 | [CHILE] | https://www.opinionsur.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 12:51:03 | [CHILE] | https://www.diarioelcentro.cl/ | Error crítico build() | Article is binary data: https://ad.diarioelcentro.cl/3yBtw9e
+2026-10-25 12:58:45 | [CHILE] | https://enlineamaule.cl/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (12 errores)
+2026-10-25 13:00:28 | [CHILE] | https://www.linaresnoticia.cl/ | Error crítico build() | Article is binary data: https://www.linaresnoticia.cl/favicon.ico
+2026-10-25 13:05:31 | [CHILE] | https://www.prensacurico.cl/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 13:05:36 | [CHILE] | http://www.cronicanoticias.cl/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 13:05:49 | [CHILE] | https://www.cauquenesnet.cl/ | Error crítico build() | Http error when downloading https://www.cauquenesnet.cl/. Status code: 403
+2026-10-25 13:06:44 | [CHILE] | http://www.elsancarlino.cl/ | Error crítico build() | Article is binary data: https://www.elsancarlino.cl/favicon.ico
+2026-10-25 13:06:49 | [CHILE] | https://www.sancarlosonline.cl/ | Error crítico build() | Article is binary data: https://www.sancarlosonline.cl/favicon.ico
+2026-10-25 13:07:34 | [CHILE] | https://orbitanoticias.cl/ | Error crítico build() | Http error when downloading https://orbitanoticias.cl/. Status code: 500
+2026-10-25 13:07:42 | [CHILE] | https://www.elrancaguino.cl/ | Error crítico build() | Http error when downloading https://www.elrancaguino.cl/. Status code: 403
+2026-10-25 13:11:32 | [CHILE] | https://eltipografo.cl/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (1 errores)
+2026-10-25 13:20:25 | [CHILE] | http://www.diarioviregion.cl/ | Error crítico build() | Http error when downloading http://www.diarioviregion.cl/. Status code: 404
+2026-10-25 13:23:21 | [CHILE] | http://www.soyiquique.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 13:32:53 | [CHILE] | https://diarioangamos.com/ | Error crítico build() | Http error when downloading https://diarioangamos.com/. Status code: 403
+2026-10-25 13:32:55 | [CHILE] | http://www.soyvalparaiso.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 13:36:59 | [CHILE] | https://www.diariolaquinta.cl/ | Error crítico build() | Http error when downloading https://www.diariolaquinta.cl/. Status code: 403
+2026-10-25 13:42:56 | [CHILE] | http://www.soyquillota.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 13:42:56 | [CHILE] | https://www.masnoticia.cl/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 13:44:51 | [CHILE] | https://aconcaguadigital.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 13:47:11 | [CHILE] | https://www.elandino.cl/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 13:51:57 | [CHILE] | https://www.pagina7.cl/ | Error crítico build() | Article is binary data: https://www.pagina7.cl/privacidad.pdf
+2026-10-25 14:04:46 | [CHILE] | https://elsancarlino.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 14:04:51 | [CHILE] | http://www.elandino.cl/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 14:18:52 | [CHILE] | https://cronicanoticias.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 14:19:08 | [CHILE] | https://innovacionchilena.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 14:27:07 | [CHILE] | https://www.biobiochile.cl/ | Error crítico build() | Article is binary data: https://www.biobiochile.cl/frecuencias_rbb.pdf
+2026-10-25 14:29:01 | [CHILE] | https://www.encancha.cl/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (431 errores)
+2026-10-25 14:32:41 | [CHILE] | https://enlalinea.cl/home/ | Error crítico build() | Http error when downloading https://enlalinea.cl/home/. Status code: 404
+2026-10-25 14:32:55 | [CHILE] | https://www.elchelenko.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 14:33:14 | [CHILE] | https://centrodeinnovacion.uc.cl/noticias/ | Error crítico build() | Article is binary data: https://kitdigital.uc.cl
+2026-10-25 14:34:07 | [CHILE] | https://cauquenesnet.cl/ | Error crítico build() | Http error when downloading https://cauquenesnet.cl/. Status code: 403
+2026-10-25 14:37:46 | [CHILE] | https://www.eldiariopanguipulli.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 14:49:06 | [CHILE] | https://lanoticiaonline.cl/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 14:49:07 | [CHILE] | https://araucaniadiario.cl/ | Error crítico build() | Http error when downloading https://araucaniadiario.cl/. Status code: 403
+2026-10-25 14:50:12 | [CHILE] | https://www.losriosaldia.cl/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (46 errores)
+2026-10-25 14:53:26 | [CHILE] | https://www.soychile.cl/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (10 errores)
+2026-10-25 14:54:35 | [CHILE] | https://www.elrancaguino.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 14:59:19 | [CHILE] | https://www.cienciaenchile.cl/category/noticias/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 14:59:30 | [CHILE] | https://www.diarioelcentro.cl/ | Error crítico build() | Article is binary data: https://ad.diarioelcentro.cl/3yBtw9e
+2026-10-25 15:13:35 | [CHILE] | https://radio.uchile.cl/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (221 errores)
+2026-10-25 15:15:05 | [CHILE] | https://www.gamba.cl/ | Error crítico build() | Http error when downloading https://www.gamba.cl/. Status code: 403
+2026-10-25 15:15:55 | [CHILE] | https://www.diarioviregion.cl/ | Error crítico build() | Http error when downloading https://www.diarioviregion.cl/. Status code: 404
+2026-10-25 15:17:05 | [CHILE] | https://www.aconcaguadigital.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 15:17:05 | [CHILE] | https://prensacurico.cl/portal/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 15:17:24 | [CHILE] | https://www.diarioconstitucional.cl/ | Error crítico build() | Http error when downloading https://www.diarioconstitucional.cl/. Status code: 403
+2026-10-25 15:17:40 | [CHILE] | https://elhuemul.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 15:19:01 | [CHILE] | https://www.suractual.cl/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 15:24:46 | [CHILE] | https://elcachapoal.cl/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (91 errores)
+2026-10-25 15:29:16 | [CHILE] | https://prensaopal.cl/ | Error crítico build() | Http error when downloading https://prensaopal.cl/. Status code: 403
+2026-10-25 15:36:02 | [CHILE] | https://diariolaquinta.cl/ | Error crítico build() | Http error when downloading https://diariolaquinta.cl/. Status code: 403
+2026-10-25 15:38:26 | [CHILE] | https://www.chasquis.cl/diario/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (1 errores)
+2026-10-25 15:39:02 | [CHILE] | https://opinionsur.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 15:39:10 | [ARGENTINA] | http://www.24baires.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 15:39:12 | [ARGENTINA] | https://www.ambito.com/ | Error crítico build() | Article is binary data: https://publicidad.ambito.com/ADMediakit.pdf
+2026-10-25 15:45:51 | [ARGENTINA] | http://www.diarioel9dejulio.com.ar/ | Error crítico build() | Http error when downloading http://www.diarioel9dejulio.com.ar/. Status code: 403
+2026-10-25 15:55:35 | [ARGENTINA] | https://www.laimposible.org.ar/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (8 errores)
+2026-10-25 15:55:43 | [ARGENTINA] | http://www.laprensa.com.ar/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 16:01:28 | [ARGENTINA] | https://www.infobae.com/ | Error crítico build() | Article is binary data: https://mediakit-institucional.infobae.com
+2026-10-25 16:03:38 | [ARGENTINA] | https://www.telam.com.ar/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 16:04:35 | [ARGENTINA] | https://www.viapais.com.ar/https://www.lavoz.com.ar/ | Error crítico build() | Http error when downloading https://www.viapais.com.ar/https://www.lavoz.com.ar/. Status code: 404
+2026-10-25 16:05:05 | [ARGENTINA] | http://www.diarioalfil.com.ar/ | Error crítico build() | Http error when downloading http://www.diarioalfil.com.ar/. Status code: 403
+2026-10-25 16:07:52 | [ARGENTINA] | http://www.elsol.com.ar/ | Error crítico build() | Http error when downloading http://www.elsol.com.ar/. Status code: 403
+2026-10-25 16:09:01 | [ARGENTINA] | http://www.ciudadanodiario.com.ar/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 16:13:38 | [ARGENTINA] | https://www.lapampadiaxdia.com.ar/ | Error crítico build() | Article is binary data: https://www.lapampadiaxdia.com.ar/favicon.ico
+2026-10-25 16:16:33 | [ARGENTINA] | https://www.enbocadetodoshd.com.ar/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (240 errores)
+2026-10-25 16:16:41 | [ARGENTINA] | https://portal21.com.ar/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 16:16:54 | [ARGENTINA] | https://castexaldia.com.ar/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 16:22:09 | [ARGENTINA] | https://www.maracodigital.net/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (1 errores)
+2026-10-25 16:22:11 | [ARGENTINA] | https://www.misionescuatro.com/ | Error crítico build() | Http error when downloading https://www.misionescuatro.com/. Status code: 403
+2026-10-25 16:23:41 | [ARGENTINA] | http://www.noticiaslaregion.com.ar/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 16:23:42 | [ARGENTINA] | https://www.oberaesnoticia.com.ar/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 16:25:52 | [ARGENTINA] | https://www.minutoneuquen.com/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (144 errores)
+2026-10-25 16:26:39 | [ARGENTINA] | https://realidadsm.com/ | Error crítico build() | Http error when downloading https://realidadsm.com/. Status code: 403
+2026-10-25 16:27:44 | [ARGENTINA] | https://noticiasdeplottier.com.ar/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 16:29:06 | [ARGENTINA] | https://www.diarioneuquen.com.ar/ | Error crítico build() | Http error when downloading https://www.diarioneuquen.com.ar/. Status code: 403
+2026-10-25 16:40:30 | [ARGENTINA] | http://www.diarioaldia.com.ar/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 16:40:30 | [ARGENTINA] | https://www.loprincipal.com.ar/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 16:40:32 | [ARGENTINA] | https://www.noticiasrionegro.com.ar/ | Error crítico build() | Http error when downloading https://www.noticiasrionegro.com.ar/. Status code: 403
+2026-10-25 16:41:46 | [ARGENTINA] | https://www.diariolapalabra.com.ar/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (4 errores)
+2026-10-25 16:49:16 | [ARGENTINA] | https://www.eldiario24.com/ | Error crítico build() | Http error when downloading https://www.eldiario24.com/. Status code: 530
+2026-10-25 16:49:39 | [ARGENTINA] | https://vientostucumanos.com.ar/ | Error crítico build() | Http error when downloading https://vientostucumanos.com.ar/. Status code: 403
+2026-10-25 16:49:48 | [ARGENTINA] | https://noticiasdeljardin.com.ar/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 16:52:02 | [ARGENTINA] | http://www.p23.com.ar/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 16:52:03 | [ARGENTINA] | https://ushuaia24.com.ar/ | Error crítico build() | Http error when downloading https://ushuaia24.com.ar/. Status code: 403
+2026-10-25 16:52:31 | [ARGENTINA] | https://shelknamsur.com/ | Error crítico build() | Http error when downloading https://shelknamsur.com/. Status code: 403
+2026-10-25 16:53:02 | [ARGENTINA] | https://dellagonoticias.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 16:53:15 | [ARGENTINA] | https://laterceraciudad.com.ar/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 16:53:20 | [BOLIVIA] | https://www.eldiario.net/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 16:57:16 | [BOLIVIA] | https://www.ahoraelpueblo.bo/ | Error crítico build() | Http error when downloading https://www.ahoraelpueblo.bo/. Status code: 521
+2026-10-25 16:59:41 | [BOLIVIA] | https://www.abi.bo/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 17:07:43 | [BOLIVIA] | https://www.correodelsur.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 17:07:47 | [BOLIVIA] | https://www.deloscintis.com.bo/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 17:08:01 | [BOLIVIA] | https://www.opinion.com.bo/ | Error crítico build() | Http error when downloading https://www.opinion.com.bo/. Status code: 403
+2026-10-25 17:12:59 | [BOLIVIA] | https://www.perladelacre.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 17:13:02 | [BOLIVIA] | https://www.elpotosi.net/ | Error crítico build() | Http error when downloading https://www.elpotosi.net/. Status code: 403
+2026-10-25 17:18:23 | [BOLIVIA] | https://www.soldepando.com/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (30 errores)
+2026-10-25 17:19:03 | [BOLIVIA] | https://www.hoybolivia.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 17:21:27 | [BOLIVIA] | https://clave300.net/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 17:25:32 | [BOLIVIA] | https://www.ahoradigital.net/ | Error crítico build() | Http error when downloading https://www.ahoradigital.net/. Status code: 403
+2026-10-25 17:25:32 | [BOLIVIA] | https://www.lavozdetarija.com/ | Error crítico build() | Http error when downloading https://www.lavozdetarija.com/. Status code: 403
+2026-10-25 17:25:33 | [BOLIVIA] | https://www.elperiodico.com.bo/ | Error crítico build() | Http error when downloading https://www.elperiodico.com.bo/. Status code: 403
+2026-10-25 17:29:29 | [BOLIVIA] | https://www.infotarija.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 17:38:52 | [BOLIVIA] | https://www.diarioelchaqueno.net/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (1 errores)
+2026-10-25 17:52:20 | [COLOMBIA] | https://www.diarioadn.co/ | Error crítico build() | Http error when downloading https://www.diarioadn.co/. Status code: 403
+2026-10-25 17:52:42 | [COLOMBIA] | https://www.desdeabajo.info/ | Error crítico build() | Article is binary data: https://www.desdeabajo.info/attachment-da167
+2026-10-25 17:53:54 | [COLOMBIA] | https://www.lasillavacia.com/ | Error crítico build() | Http error when downloading https://www.lasillavacia.com/. Status code: 403
+2026-10-25 18:01:53 | [COLOMBIA] | https://h13n.com/ | Error crítico build() | Http error when downloading https://h13n.com/. Status code: 403
+2026-10-25 18:06:05 | [COLOMBIA] | https://actualidad.com.co/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 18:06:05 | [COLOMBIA] | https://araucanoticias.com.co/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 18:06:12 | [COLOMBIA] | https://laprensaaraucana.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 18:16:08 | [COLOMBIA] | https://lachachara.org/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (134 errores)
+2026-10-25 18:44:43 | [COLOMBIA] | https://www.midiario.co/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 18:44:57 | [COLOMBIA] | https://semanariolacalle.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 18:47:00 | [COLOMBIA] | https://primeralinea.com.co/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 18:48:38 | [COLOMBIA] | https://revistachoco.com.co/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 18:51:18 | [COLOMBIA] | https://elmeridiano.co/ | Error crítico build() | Article is binary data: https://elmeridiano.co/
+2026-10-25 18:51:19 | [COLOMBIA] | https://www.lapiragua.co/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 19:03:03 | [COLOMBIA] | https://www.opanoticias.com/ | Error crítico build() | Article is binary data: https://www.opanoticias.com/favicon.svg
+2026-10-25 19:16:07 | [COLOMBIA] | https://guajiranews.com/ | Error crítico build() | Article is binary data: https://guajiranews.com/politica
+2026-10-25 19:26:30 | [COLOMBIA] | https://elpantano.co/ | Error crítico build() | Http error when downloading https://elpantano.co/. Status code: 404
+2026-10-25 19:31:47 | [COLOMBIA] | https://www.noticierodelllano.com/ | Error crítico build() | Article is binary data: https://www.noticierodelllano.com/favicon.ico
+2026-10-25 19:38:17 | [COLOMBIA] | https://www.cronicadelquindio.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 19:40:16 | [COLOMBIA] | https://www.eldiario.com.co/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 19:45:18 | [COLOMBIA] | https://www.opinioncaribe.com/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (89 errores)
+2026-10-25 19:45:40 | [COLOMBIA] | https://elextra.co/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 19:50:38 | [COLOMBIA] | https://www.periodico15.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 19:50:41 | [COLOMBIA] | https://www.elmeridiano.co/ | Error crítico build() | Article is binary data: https://www.elmeridiano.co/
+2026-10-25 19:50:44 | [COLOMBIA] | https://www.sucrenoticias.com/ | Error crítico build() | Http error when downloading https://www.sucrenoticias.com/. Status code: 403
+2026-10-25 20:07:02 | [COLOMBIA] | https://tolima7dias.com.co/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (39 errores)
+2026-10-25 20:16:05 | [COSTA_RICA] | https://www.ncrnoticias.com/ | Error crítico build() | Http error when downloading https://www.ncrnoticias.com/. Status code: 403
+2026-10-25 20:18:24 | [COSTA_RICA] | https://www.observador.cr/ | Error crítico build() | Http error when downloading https://www.observador.cr/. Status code: 403
+2026-10-25 20:18:37 | [COSTA_RICA] | https://www.elpais.cr/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 20:25:08 | [COSTA_RICA] | https://www.periodicolasegundacr.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 20:27:03 | [COSTA_RICA] | https://www.cartagohoy.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 20:30:56 | [COSTA_RICA] | https://zonaaltamedios.com/ | Error crítico build() | Article is binary data: https://zonaaltamedios.com/favicon.ico
+2026-10-25 20:33:02 | [COLOMBIA] | https://www.quindio24horas.com/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (235 errores)
+2026-10-25 20:33:05 | [ECUADOR] | https://www.lahora.com.ec/ | Error crítico build() | Http error when downloading https://www.lahora.com.ec/. Status code: 403
+2026-10-25 20:38:16 | [ECUADOR] | http://www.laprensa.com.ec/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 20:38:16 | [ECUADOR] | http://www.diariolosandes.com.ec/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 20:38:59 | [ECUADOR] | https://laprimiciaec.com/ | Error crítico build() | Http error when downloading https://laprimiciaec.com/. Status code: 403
+2026-10-25 20:39:08 | [ECUADOR] | https://aldiaonline.net/ | Error crítico build() | Article is binary data: https://aldiaonline.net/?feed=comments-rss2
+2026-10-25 20:39:20 | [ECUADOR] | http://www.diariocorreo.com.ec/ | Error crítico build() | Http error when downloading http://www.diariocorreo.com.ec/. Status code: 500
+2026-10-25 20:41:13 | [ECUADOR] | http://www.diariopinion.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 20:44:19 | [ECUADOR] | https://www.eluniverso.com/ | Error crítico build() | Article is binary data: https://pdfs.eluniverso.com/Sambo-06-05-26.pdf
+2026-10-25 20:50:26 | [ECUADOR] | https://www.lanacion.com.ec/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 20:53:32 | [ECUADOR] | https://www.hoyenimbabura.com/ | Error crítico build() | Http error when downloading https://www.hoyenimbabura.com/. Status code: 403
+2026-10-25 20:53:33 | [ECUADOR] | https://www.cronica.com.ec/ | Error crítico build() | Http error when downloading https://www.cronica.com.ec/. Status code: 403
+2026-10-25 21:00:22 | [ECUADOR] | https://www.ecoamazonico.com/ | Error crítico build() | Http error when downloading https://www.ecoamazonico.com/. Status code: 526
+2026-10-25 21:01:18 | [ECUADOR] | http://www.periodicolaprimera.com/ | Error crítico build() | Article is binary data: https://www.periodicolaprimera.com/favicon.ico
+2026-10-25 21:05:38 | [ECUADOR] | https://www.elamazonico.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 21:06:03 | [ECUADOR] | https://zamoraendirecto.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 21:06:48 | [ESTADOS_UNIDOS] | https://www.azcentral.com/lavoz/ | Error crítico build() | Http error when downloading https://www.azcentral.com/lavoz/. Status code: 402
+2026-10-25 21:12:26 | [ESTADOS_UNIDOS] | https://ellatinoonline.com/ | Error crítico build() | Http error when downloading https://ellatinoonline.com/. Status code: 403
+2026-10-25 21:15:00 | [ESTADOS_UNIDOS] | https://www.ivpressonline.com/adelantevalle/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (64 errores)
+2026-10-25 21:15:01 | [ESTADOS_UNIDOS] | https://elpopularnews.com/ | Error crítico build() | Http error when downloading https://elpopularnews.com/. Status code: 403
+2026-10-25 21:15:15 | [ESTADOS_UNIDOS] | https://www.fresnobee.com/vida-en-el-valle/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 21:15:58 | [ESTADOS_UNIDOS] | https://laconexionusa.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 21:15:59 | [ESTADOS_UNIDOS] | https://enlacelatinonc.org/ | Error crítico build() | Http error when downloading https://enlacelatinonc.org/. Status code: 403
+2026-10-25 21:16:34 | [ESTADOS_UNIDOS] | https://www.elnuevoherald.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 21:20:27 | [ECUADOR] | https://www.studiofutbol.com.ec/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (137 errores)
+2026-10-25 21:21:00 | [ESTADOS_UNIDOS] | https://hispanopost.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 21:21:01 | [ESTADOS_UNIDOS] | https://elvenezolanonews.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 21:23:13 | [ESTADOS_UNIDOS] | https://surflorida.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 21:27:48 | [ESTADOS_UNIDOS] | https://queenslatino.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 21:28:13 | [ESTADOS_UNIDOS] | https://www.star-telegram.com/la-estrella/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 21:28:13 | [ESTADOS_UNIDOS] | https://voz.us/ | Error crítico build() | Article is binary data: https://salud.voz.us/es
+2026-10-25 21:29:49 | [ESTADOS_UNIDOS] | https://elmundonewspaper.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 21:29:51 | [ESTADOS_UNIDOS] | https://www.houstonchronicle.com/la-voz/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 21:30:56 | [GUATEMALA] | https://www.prensalibre.com/ | Error crítico build() | Article is binary data: https://75aniversario.prensalibre.com/?feed=comments-rss2
+2026-10-25 21:31:51 | [GUATEMALA] | https://www.soy502.com/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (27 errores)
+2026-10-25 21:32:23 | [GUATEMALA] | https://agn.gt/ | Error crítico build() | Http error when downloading https://agn.gt/. Status code: 403
+2026-10-25 21:39:43 | [GUATEMALA] | https://perspectiva.gt/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 21:47:55 | [GUATEMALA] | https://www.elmetropolitano.com.gt/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 21:48:38 | [GUATEMALA] | https://elescuintlecoperiodico.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 21:52:53 | [GUATEMALA] | https://www.diariodelosaltos.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 21:52:54 | [GUATEMALA] | https://www.regionmas.com/ | Error crítico build() | Http error when downloading https://www.regionmas.com/. Status code: 403
+2026-10-25 21:54:13 | [MEXICO] | https://www.jornada.com.mx/ | Error crítico build() | Http error when downloading https://www.jornada.com.mx/. Status code: 403
+2026-10-25 21:58:14 | [MEXICO] | https://www.proceso.com.mx/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (246 errores)
+2026-10-25 21:59:53 | [MEXICO] | https://www.sinembargo.mx/ | Error crítico build() | Http error when downloading https://www.sinembargo.mx/. Status code: 403
+2026-10-25 21:59:56 | [MEXICO] | https://www.elsoldemexico.com.mx/ | Error crítico build() | Http error when downloading https://www.elsoldemexico.com.mx/. Status code: 403
+2026-10-25 22:03:38 | [MEXICO] | https://www.24-horas.mx/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (81 errores)
+2026-10-25 22:06:41 | [MEXICO] | https://www.pasala.com.mx/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 22:15:43 | [MEXICO] | http://unomasuno.com.mx/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (165 errores)
+2026-10-25 22:16:49 | [MEXICO] | https://www.estadiodeportes.mx/ | Error crítico build() | Http error when downloading https://www.estadiodeportes.mx/. Status code: 403
+2026-10-25 22:17:13 | [MEXICO] | https://esto.com.mx/ | Error crítico build() | Http error when downloading https://esto.com.mx/. Status code: 403
+2026-10-25 22:17:39 | [MEXICO] | https://www.record.com.mx/ | Error crítico build() | Article is binary data: https://www.record.com.mx/rss
+2026-10-25 22:19:47 | [MEXICO] | https://elindependiente.mx/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 22:20:39 | [MEXICO] | https://www.thenews.mx/ | Error crítico build() | Http error when downloading https://www.thenews.mx/. Status code: 403
+2026-10-25 22:23:12 | [MEXICO] | https://www.latribuna.com.mx/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 22:23:50 | [MEXICO] | https://elinformante.mx/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 22:23:52 | [MEXICO] | https://www.elsoldetoluca.com.mx/ | Error crítico build() | Http error when downloading https://www.elsoldetoluca.com.mx/. Status code: 403
+2026-10-25 22:23:52 | [MEXICO] | https://adnoticias.mx/ | Error crítico build() | Http error when downloading https://adnoticias.mx/. Status code: 403
+2026-10-25 22:30:09 | [MEXICO] | https://www.trespm.mx/ | Error crítico build() | Http error when downloading https://www.trespm.mx/. Status code: 403
+2026-10-25 22:30:32 | [MEXICO] | https://seunonoticias.mx/ | Error crítico build() | Http error when downloading https://seunonoticias.mx/. Status code: 403
+2026-10-25 22:31:37 | [MEXICO] | https://mvt.com.mx/ | Error crítico build() | Http error when downloading https://mvt.com.mx/. Status code: 403
+2026-10-25 22:34:14 | [MEXICO] | https://www.tolucanoticias.com/ | Error crítico build() | Article is binary data: https://www.tolucanoticias.com/favicon.ico
+2026-10-25 22:37:02 | [MEXICO] | https://reporterosenmovimiento.com/ | Error crítico build() | Http error when downloading https://reporterosenmovimiento.com/. Status code: 403
+2026-10-25 22:38:10 | [MEXICO] | https://www.diarioimagen.net/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (1 errores)
+2026-10-25 22:38:15 | [MEXICO] | https://www.heraldo.mx/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 22:39:38 | [MEXICO] | https://www.elsoldelcentro.com.mx/ | Error crítico build() | Http error when downloading https://www.elsoldelcentro.com.mx/. Status code: 403
+2026-10-25 22:40:55 | [MEXICO] | http://aguasdigital.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 22:40:57 | [MEXICO] | https://www.elheraldodechihuahua.com.mx/ | Error crítico build() | Http error when downloading https://www.elheraldodechihuahua.com.mx/. Status code: 403
+2026-10-25 22:47:59 | [MEXICO] | https://codigotres.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 22:55:29 | [MEXICO] | https://www.codigotres.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 22:55:33 | [MEXICO] | https://elmonitordeparral.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 22:55:35 | [MEXICO] | https://www.elsoldeparral.com.mx/ | Error crítico build() | Http error when downloading https://www.elsoldeparral.com.mx/. Status code: 403
+2026-10-25 23:07:03 | [MEXICO] | https://www.elsoldeacapulco.com.mx/ | Error crítico build() | Http error when downloading https://www.elsoldeacapulco.com.mx/. Status code: 403
+2026-10-25 23:07:44 | [MEXICO] | https://www.hidrocalidodigital.com/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (134 errores)
+2026-10-25 23:09:01 | [MEXICO] | https://diarioobjetivo.com.mx/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 23:11:00 | [MEXICO] | https://www.lacronicavespertinodechilpancingo.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 23:13:18 | [MEXICO] | https://www.am.com.mx/ | Error crítico build() | Http error when downloading https://www.am.com.mx/. Status code: 403
+2026-10-25 23:13:21 | [MEXICO] | https://www.elsoldeleon.com.mx/ | Error crítico build() | Http error when downloading https://www.elsoldeleon.com.mx/. Status code: 403
+2026-10-25 23:13:22 | [MEXICO] | https://www.noticiasvespertinas.com.mx/ | Error crítico build() | Http error when downloading https://www.noticiasvespertinas.com.mx/. Status code: 403
+2026-10-25 23:13:23 | [MEXICO] | https://www.elsoldeirapuato.com.mx/ | Error crítico build() | Http error when downloading https://www.elsoldeirapuato.com.mx/. Status code: 403
+2026-10-25 23:13:24 | [MEXICO] | https://www.elsoldelbajio.com.mx/ | Error crítico build() | Http error when downloading https://www.elsoldelbajio.com.mx/. Status code: 403
+2026-10-25 23:13:26 | [MEXICO] | https://www.elsoldesalamanca.com.mx/ | Error crítico build() | Http error when downloading https://www.elsoldesalamanca.com.mx/. Status code: 403
+2026-10-25 23:13:28 | [MEXICO] | https://www.heraldoleon.mx/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 23:13:46 | [MEXICO] | https://www.eloccidental.com.mx/ | Error crítico build() | Http error when downloading https://www.eloccidental.com.mx/. Status code: 403
+2026-10-25 23:14:57 | [MEXICO] | https://www.mural.com.mx/ | Error crítico build() | Article is binary data: https://www.mural.com.mx/favicon.ico
+2026-10-25 23:15:05 | [MEXICO] | https://www.ntrguadalajara.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 23:15:19 | [MEXICO] | http://www.cronicajalisco.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 23:21:28 | [MEXICO] | https://www.reportediario.com.mx/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 23:21:51 | [MEXICO] | https://vallartaindependiente.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 23:25:58 | [MEXICO] | https://elprovincia.com/ | Error crítico build() | Http error when downloading https://elprovincia.com/. Status code: 500
+2026-10-25 23:26:32 | [MEXICO] | https://www.elsoldepuebla.com.mx/ | Error crítico build() | Http error when downloading https://www.elsoldepuebla.com.mx/. Status code: 403
+2026-10-25 23:26:33 | [MEXICO] | https://www.diariocambio.com.mx/ | Error crítico build() | Http error when downloading https://www.diariocambio.com.mx/. Status code: 403
+2026-10-25 23:31:34 | [MEXICO] | https://sintesis.com.mx/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 23:32:39 | [MEXICO] | https://www.laopinionpuebla.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 23:36:17 | [MEXICO] | https://www.vallartatoday.com/es/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (1 errores)
+2026-10-25 23:39:21 | [MEXICO] | https://www.diariodexalapa.com.mx/ | Error crítico build() | Http error when downloading https://www.diariodexalapa.com.mx/. Status code: 403
+2026-10-25 23:40:04 | [MEXICO] | https://cronicadexalapa.com.mx/ | Error crítico build() | Http error when downloading https://cronicadexalapa.com.mx/. Status code: 403
+2026-10-25 23:40:46 | [MEXICO] | https://www.oyeveracruz.com.mx/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 23:40:56 | [MEXICO] | https://mundoxalapa.com/ | Error crítico build() | Http error when downloading https://mundoxalapa.com/. Status code: 404
+2026-10-25 23:43:39 | [MEXICO] | https://imagendeveracruz.mx/ | Error crítico build() | Http error when downloading https://imagendeveracruz.mx/. Status code: 403
+2026-10-25 23:44:28 | [MEXICO] | https://www.alcalorpolitico.com/edicion/inicio.html | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (1 errores)
+2026-10-25 23:44:30 | [MEXICO] | https://diariodelistmo.com/ | Error crítico build() | Http error when downloading https://diariodelistmo.com/. Status code: 403
+2026-10-25 23:44:31 | [MEXICO] | https://www.liberal.com.mx/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 23:45:20 | [MEXICO] | https://heraldodecoatzacoalcos.com.mx/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 23:46:22 | [NICARAGUA] | https://100noticias.com.ni/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-25 23:47:47 | [NICARAGUA] | https://www.articulo66.com/ | Error crítico build() | Http error when downloading https://www.articulo66.com/. Status code: 403
+2026-10-25 23:54:45 | [NICARAGUA] | https://www.bolsadenoticias.com.ni/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-25 23:59:32 | [NICARAGUA] | https://www.diariobarricada.com/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (1 errores)
+2026-10-26 00:00:04 | [PANAMA] | https://eldigitalpanama.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 00:00:08 | [PANAMA] | https://elcapitalfinanciero.com/ | Error crítico build() | Http error when downloading https://elcapitalfinanciero.com/. Status code: 403
+2026-10-26 00:04:08 | [PERU] | https://www.elperuano.pe/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (5 errores)
+2026-10-26 00:04:09 | [PERU] | https://www.expreso.com.pe/ | Error crítico build() | Http error when downloading https://www.expreso.com.pe/. Status code: 403
+2026-10-26 00:06:50 | [PERU] | https://www.peru21.pe/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (67 errores)
+2026-10-26 00:09:57 | [PERU] | https://www.larazon.pe/ | Error crítico build() | Http error when downloading https://www.larazon.pe/. Status code: 403
+2026-10-26 00:21:51 | [PERU] | http://www.lanacionperu.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 00:34:02 | [PERU] | https://www.elbocon.pe/ | Error crítico build() | Http error when downloading https://www.elbocon.pe/. Status code: 525
+2026-10-26 00:34:03 | [PERU] | https://www.todosport.pe/ | Error crítico build() | Http error when downloading https://www.todosport.pe/. Status code: 403
+2026-10-26 00:49:00 | [PERU] | https://www.elmen.pe/ | Error crítico build() | Http error when downloading https://www.elmen.pe/. Status code: 403
+2026-10-26 00:49:03 | [PERU] | http://www.radiokaribena.pe/ | Error crítico build() | Http error when downloading http://www.radiokaribena.pe/. Status code: 404
+2026-10-26 00:49:04 | [PERU] | https://www.elchino.pe/ | Error crítico build() | Http error when downloading https://www.elchino.pe/. Status code: 403
+2026-10-26 00:58:38 | [PERU] | https://www.ancashnoticias.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 01:02:17 | [PERU] | http://www.laindustria.pe/ancash/ | Error crítico build() | Http error when downloading http://www.laindustria.pe/ancash/. Status code: 404
+2026-10-26 01:05:16 | [PERU] | https://www.lamula.pe/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (233 errores)
+2026-10-26 01:10:03 | [PERU] | https://revelacion.pe/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 01:12:50 | [PERU] | https://portalayacucho.pe/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 01:14:06 | [PERU] | https://elnuevodiario.pe/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 01:23:09 | [PERU] | https://www.verdaddelpueblo.com/ | Error crítico build() | Article is binary data: https://www.verdaddelpueblo.com/favicon.ico
+2026-10-26 01:27:50 | [PERU] | https://www.nuevonorte.com.pe/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 01:28:55 | [PERU] | https://sientetrujillo.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 01:29:22 | [PERU] | https://www.diarioelsolcusco.pe/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (61 errores)
+2026-10-26 01:31:53 | [PERU] | https://www.laindustria.pe/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 01:31:55 | [PERU] | http://www.undiario.pe/ | Error crítico build() | Http error when downloading http://www.undiario.pe/. Status code: 403
+2026-10-26 01:32:09 | [PERU] | https://www.laindustriadechiclayo.pe/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 01:32:10 | [PERU] | https://www.elnorteno.pe/ | Error crítico build() | Http error when downloading https://www.elnorteno.pe/. Status code: 403
+2026-10-26 01:32:10 | [PERU] | https://ciclon.pe/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 01:33:01 | [PERU] | http://www.proycontra.com.pe/ | Error crítico build() | Article is binary data: http://www.proycontra.com.pe/mas-leidas
+2026-10-26 01:34:46 | [PERU] | https://www.cheleloyborolas.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 01:34:54 | [PERU] | http://www.pascolibre.com/ | Error crítico build() | Article is binary data: http://www.pascolibre.com/favicon.ico
+2026-10-26 01:37:58 | [PERU] | https://noticiaspiura30.pe/ | Error crítico build() | Http error when downloading https://noticiaspiura30.pe/. Status code: 403
+2026-10-26 01:38:02 | [PERU] | http://www.panoramad.com.pe/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 01:46:22 | [URUGUAY] | https://www.elpais.com.uy/ | Error crítico build() | Http error when downloading https://www.elpais.com.uy/. Status code: 403
+2026-10-26 02:00:32 | [URUGUAY] | https://www.futbol.com.uy/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:00:34 | [URUGUAY] | https://www.ovaciondigital.com.uy/ | Error crítico build() | Http error when downloading https://www.ovaciondigital.com.uy/. Status code: 403
+2026-10-26 02:03:31 | [URUGUAY] | https://www.cronicas.com.uy/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 02:03:33 | [URUGUAY] | https://www.diariolanoticia.com.uy/ | Error crítico build() | Http error when downloading https://www.diariolanoticia.com.uy/. Status code: 403
+2026-10-26 02:06:42 | [URUGUAY] | https://www.hoycanelones.com.uy/ | Error crítico build() | Article is binary data: https://hoycanelones.com.uy/?feed=comments-rss2
+2026-10-26 02:06:45 | [URUGUAY] | https://canelonesciudad.com.uy/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:09:07 | [URUGUAY] | http://www.diariotiempo.com.uy/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:10:49 | [URUGUAY] | https://www.coloniaya.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:11:10 | [URUGUAY] | https://www.lacoloniadigital.com.uy/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:13:30 | [URUGUAY] | https://helvecia.com.uy/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:13:51 | [URUGUAY] | https://tararirashoy.com.uy/ | Error crítico build() | Article is binary data: https://tararirashoy.com.uy/profesionales/?feed=comments-rss2
+2026-10-26 02:13:59 | [URUGUAY] | https://www.duraznodigital.uy/ | Error crítico build() | Article is binary data: https://www.duraznodigital.uy/favicon.ico
+2026-10-26 02:14:09 | [URUGUAY] | https://paginacero.com.uy/ | Error crítico build() | Article is binary data: https://paginacero.com.uy/?feed=comments-rss2
+2026-10-26 02:14:09 | [URUGUAY] | http://www.ecosregionales.uy/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 02:14:34 | [URUGUAY] | http://www.elbuscadordiario.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:14:35 | [URUGUAY] | https://www.floridadiario.com.uy/ | Error crítico build() | Http error when downloading https://www.floridadiario.com.uy/. Status code: 403
+2026-10-26 02:14:37 | [URUGUAY] | https://www.florida24.com.uy/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 02:15:11 | [URUGUAY] | https://floridadiario.com.uy/ | Error crítico build() | Http error when downloading https://floridadiario.com.uy/. Status code: 403
+2026-10-26 02:20:29 | [URUGUAY] | https://www.correopuntadeleste.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:20:48 | [URUGUAY] | https://220.uy/ | Error crítico build() | Http error when downloading https://220.uy/. Status code: 403
+2026-10-26 02:29:00 | [URUGUAY] | http://www.rochaaldia.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:30:45 | [URUGUAY] | https://rochanoticias.com/ | Error crítico build() | Http error when downloading https://rochanoticias.com/. Status code: 403
+2026-10-26 02:34:26 | [URUGUAY] | https://saltonoticias.com.uy/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 02:39:30 | [URUGUAY] | http://www.diarioaccion.com.uy/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:39:38 | [URUGUAY] | http://www.diariocronicas.com.uy/ | Error crítico build() | Failed to parse: 'www.diariocronicas.com.uy..', label empty or too long
+2026-10-26 02:39:45 | [URUGUAY] | http://www.agesor.com.uy/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:44:08 | [VENEZUELA] | https://www.lapatilla.com/ | Error crítico build() | Http error when downloading https://www.lapatilla.com/. Status code: 403
+2026-10-26 02:44:14 | [VENEZUELA] | https://www.ultimasnoticias.com.ve/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:46:06 | [VENEZUELA] | https://efectococuyo.com/ | Error crítico build() | Http error when downloading https://efectococuyo.com/. Status code: 403
+2026-10-26 02:46:10 | [VENEZUELA] | https://www.elpitazo.net/ | Error crítico build() | Http error when downloading https://www.elpitazo.net/. Status code: 403
+2026-10-26 02:46:18 | [VENEZUELA] | https://www.talcualdigital.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 02:46:32 | [VENEZUELA] | https://runrun.es/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 02:48:15 | [VENEZUELA] | https://www.elestimulo.com/ | Error crítico build() | Http error when downloading https://www.elestimulo.com/. Status code: 403
+2026-10-26 02:48:39 | [VENEZUELA] | https://www.cronica.uno/ | Error crítico build() | Http error when downloading https://www.cronica.uno/. Status code: 403
+2026-10-26 02:49:47 | [VENEZUELA] | https://www.puntodecorte.net/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:53:25 | [VENEZUELA] | https://www.todosahora.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 02:53:32 | [VENEZUELA] | https://www.diariovea.com.ve/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:53:32 | [VENEZUELA] | https://www.noticiascaracas.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 02:54:01 | [VENEZUELA] | https://www.liderendeportes.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 02:57:07 | [VENEZUELA] | https://www.descifrado.com/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (30 errores)
+2026-10-26 02:57:08 | [VENEZUELA] | https://noticiasdeaqui.co/ | Error crítico build() | Http error when downloading https://noticiasdeaqui.co/. Status code: 403
+2026-10-26 03:01:39 | [VENEZUELA] | https://www.mundo-oriental.com/ | Error crítico build() | Http error when downloading https://www.mundo-oriental.com/. Status code: 403
+2026-10-26 03:04:21 | [VENEZUELA] | http://www.elperiodiquito.com/ | Error crítico build() | Http error when downloading http://www.elperiodiquito.com/. Status code: 403
+2026-10-26 03:04:22 | [VENEZUELA] | http://www.elaragueno.com.ve/ | Error crítico build() | Http error when downloading http://www.elaragueno.com.ve/. Status code: 403
+2026-10-26 03:04:28 | [VENEZUELA] | https://www.reportero24.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 03:06:00 | [VENEZUELA] | http://www.senderosdeapure.net/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (12 errores)
+2026-10-26 03:06:51 | [VENEZUELA] | https://www.notimaxplus.com/ | Error crítico build() | Article is binary data: https://www.notimaxplus.com/favicon.ico
+2026-10-26 03:14:39 | [VENEZUELA] | http://www.elluchador.info/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 03:18:54 | [VENEZUELA] | https://www.notitarde.com.ve/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (216 errores)
+2026-10-26 03:25:17 | [VENEZUELA] | https://acn.com.ve/ | Error crítico build() | Http error when downloading https://acn.com.ve/. Status code: 403
+2026-10-26 03:25:23 | [VENEZUELA] | https://laprensadecojedes.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 03:25:31 | [VENEZUELA] | https://www.tanetanae.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 03:30:23 | [VENEZUELA] | https://www.lamananadigital.com/ | Error crítico build() | Http error when downloading https://www.lamananadigital.com/. Status code: 403
+2026-10-26 03:34:43 | [VENEZUELA] | https://www.eltubazodigital.com/ | Error crítico build() | Http error when downloading https://www.eltubazodigital.com/. Status code: 403
+2026-10-26 03:40:19 | [VENEZUELA] | https://www.elimpulso.com/ | Error crítico build() | Http error when downloading https://www.elimpulso.com/. Status code: 403
+2026-10-26 03:40:33 | [VENEZUELA] | https://elinformadorve.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 03:41:51 | [VENEZUELA] | https://naguara.com/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (11 errores)
+2026-10-26 03:41:52 | [VENEZUELA] | http://www.diarioelinformante.com.ve/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 03:45:41 | [VENEZUELA] | https://www.meridadigital.com.ve/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 03:50:33 | [VENEZUELA] | https://www.tuyinforma.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 04:00:06 | [VENEZUELA] | http://www.elorientaldemonagas.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 04:09:27 | [VENEZUELA] | https://www.llanerodigital.com/ | Error crítico build() | Http error when downloading https://www.llanerodigital.com/. Status code: 403
+2026-10-26 04:09:43 | [VENEZUELA] | http://www.elperiodicodeoccidente.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 04:09:45 | [VENEZUELA] | https://www.prensaoriente.com.ve/ | Error crítico build() | Article is binary data: https://www.prensaoriente.com.ve/
+2026-10-26 04:09:46 | [VENEZUELA] | https://turimiquire.net/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 04:12:01 | [VENEZUELA] | https://elcarupanerodigital.com.ve/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 04:13:34 | [VENEZUELA] | https://www.laprensatachira.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 04:14:50 | [VENEZUELA] | https://ciudadtrujillo.com/ | Error crítico build() | Article is binary data: https://ciudadtrujillo.com/?feed=comments-rss2
+2026-10-26 04:25:08 | [VENEZUELA] | https://www.noticiascol.com/ | Error crítico build() | Article is binary data: https://www.noticiascol.com/mas-leidos
+2026-10-26 04:34:49 | [TECNOLOGIA] | https://www.genbeta.com/ | Error crítico build() | Http error when downloading https://www.genbeta.com/. Status code: 403
+2026-10-26 04:39:03 | [TECNOLOGIA] | https://es.cointelegraph.com/ | Error crítico build() | Http error when downloading https://es.cointelegraph.com/. Status code: 410
+2026-10-26 04:54:47 | [INTERNACIONAL] | https://www.revistadefrente.cl/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 04:54:49 | [INTERNACIONAL] | https://espanol.almayadeen.net/ | Error crítico build() | Http error when downloading https://espanol.almayadeen.net/. Status code: 403
+2026-10-26 04:57:01 | [INTERNACIONAL] | https://revista.carayanpress.com/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (2 errores)
+2026-10-26 04:59:10 | [RELIGION] | https://www.bibliatodo.com/NoticiasCristianas/ | Error crítico build() | Http error when downloading https://www.bibliatodo.com/NoticiasCristianas/. Status code: 403
+2026-10-26 05:01:58 | [RELIGION] | https://www.noticiacristiana.com/ | Error crítico build() | Http error when downloading https://www.noticiacristiana.com/. Status code: 403
+2026-10-26 05:02:18 | [RELIGION] | https://noticias.adventistas.org/es/ | Error crítico build() | Http error when downloading https://noticias.adventistas.org/es/. Status code: 403
+2026-10-26 05:02:24 | [RELIGION] | https://www.puertasabiertas.org/es-ES/actualidad/todos/?tagtype=Noticias | Error crítico build() | Http error when downloading https://www.puertasabiertas.org/es-ES/actualidad/todos/?tagtype=Noticias. Status code: 404
+2026-10-26 05:02:31 | [RELIGION] | https://www.acontecercristiano.net/ | Error crítico build() | Article is binary data: https://www.acontecercristiano.net/favicon.ico
+2026-10-26 05:02:46 | [RELIGION] | https://www.evangelicodigital.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 05:15:01 | [CIENCIA] | https://www.agenciasinc.es/ | Excepción no controlada | no existe la relación «news_ciencia»
+LINE 2:         INSERT INTO "news_ciencia" (media_name, url, date, a...
+                            ^
+2026-10-26 05:19:36 | [CIENCIA] | https://www.xatakaciencia.com/ | Excepción no controlada | no existe la relación «news_ciencia»
+LINE 2:         INSERT INTO "news_ciencia" (media_name, url, date, a...
+                            ^
+2026-10-26 05:42:55 | [ESPANA] | https://www.abc.es/ | Error crítico build() | Article is binary data: https://www.abc.es/hemeroteca/feed
+2026-10-26 06:16:59 | [ESPANA] | https://www.niusdiario.es/ | Error crítico build() | Http error when downloading https://www.niusdiario.es/. Status code: 403
+2026-10-26 06:25:10 | [ESPANA] | https://mundoobrero.es/ | Error crítico build() | Http error when downloading https://mundoobrero.es/. Status code: 403
+2026-10-26 06:35:37 | [ESPANA] | https://diario16plus.com/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 06:39:41 | [ESPANA] | https://www.vivasevilla.es/ | Error crítico build() | Http error when downloading https://www.vivasevilla.es/. Status code: 403
+2026-10-26 06:48:01 | [ESPANA] | https://www.eldesmarque.com/ | Error crítico build() | Http error when downloading https://www.eldesmarque.com/. Status code: 403
+2026-10-26 06:48:20 | [ESPANA] | https://sevillabuenasnoticias.com/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (120 errores)
+2026-10-26 06:48:26 | [ESPANA] | https://www.doshermanasdiariodigital.com/ | Error crítico build() | Article is binary data: https://www.doshermanasdiariodigital.com/favicon.ico
+2026-10-26 06:52:00 | [ESPANA] | https://www.utreradigital.com/web/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 06:55:55 | [ESPANA] | https://ahoramairena.es/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 06:55:59 | [ESPANA] | https://www.lebrijadigital.es/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 06:56:05 | [ESPANA] | https://moroninformacion.es/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 07:10:16 | [ESPANA] | https://www.vivamalaga.net/ | Error crítico build() | Http error when downloading https://www.vivamalaga.net/. Status code: 403
+2026-10-26 07:17:42 | [ESPANA] | https://www.marbellaconfidencial.es/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 07:20:14 | [ESPANA] | https://www.diarioaxarquia.com/ | Error crítico build() | Http error when downloading https://www.diarioaxarquia.com/. Status code: 400
+2026-10-26 07:30:26 | [ESPANA] | https://www.marbella24horas.es/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (1 errores)
+2026-10-26 07:35:36 | [ESPANA] | https://lacuencadelnalon.es/web/ | Error crítico build() | Article is binary data: https://lacuencadelnalon.es/web/?feed=comments-rss2
+2026-10-26 07:38:36 | [ESPANA] | https://www.lavozdelena.es/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 07:40:18 | [ESPANA] | https://www.clm24.es/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 07:44:56 | [ESPANA] | https://lavozdetalavera.com/ | Sin artículos detectados | No se detectaron artículos en la fuente (0 artículos)
+2026-10-26 07:44:58 | [ESPANA] | https://www.lavozdeltajo.com/ | Error crítico build() | Http error when downloading https://www.lavozdeltajo.com/. Status code: 403
+2026-10-26 07:46:14 | [ESPANA] | https://albapress.es/ | Error crítico build() | 'NoneType' object has no attribute 'xpath'
+2026-10-26 08:39:12 | [ESPANA] | https://www.cartagenadehoy.com/ | Error crítico build() | Http error when downloading https://www.cartagenadehoy.com/. Status code: 403
+2026-10-26 08:45:13 | [ESPANA] | https://www.valencianoticias.com/ | Error crítico build() | Http error when downloading https://www.valencianoticias.com/. Status code: 403
+2026-10-26 09:17:08 | [ESPANA] | https://somgandia.com/ | Error crítico build() | Http error when downloading https://somgandia.com/. Status code: 403
+2026-10-26 09:54:10 | [ESPANA] | https://www.valledeelda.com/ | Error crítico build() | Http error when downloading https://www.valledeelda.com/. Status code: 403
+2026-10-26 10:13:18 | [ESPANA] | https://novaciencia.es/ | Error crítico build() | Invalid IPv6 URL
+2026-10-26 10:21:01 | [ESPANA] | https://laplanaaldia.com/ | Fallo total artículos | Todos los artículos fallaron en descarga/parseo (1 errores)
