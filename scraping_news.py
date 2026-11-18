@@ -53,6 +53,13 @@ FAILED_DETAILS_FILE = os.path.join(FAILED_MEDIA_DIR, "failed_media_details.txt")
 _failed_media_lock = threading.Lock()
 _recorded_failed_urls = set()
 
+# Tipos de errores en failed_media_details.txt que ameritan saltar el medio
+SKIP_ERROR_TYPES = {
+    "Fallo total artículos",
+    "Error crítico build()",
+    "Excepción no controlada",
+}
+
 
 def _init_failed_media_tracker() -> None:
     """Inicializa la carpeta y carga URLs previamente registradas para evitar duplicados."""
@@ -99,6 +106,41 @@ def record_failed_media(
             logger.error(
                 f"No se pudo escribir en el registro de medios fallidos para {media_source}: {e}"
             )
+
+
+def load_failed_media_to_skip(
+    details_filepath: str = FAILED_DETAILS_FILE,
+) -> dict[str, str]:
+    """
+    Lee failed_media_details.txt y retorna un diccionario {url: error_type}
+    para los medios cuyos fallos corresponden a los tipos en SKIP_ERROR_TYPES.
+    Maneja de forma segura líneas multilínea o registros malformados.
+    """
+    skipped_media = {}
+    if not os.path.exists(details_filepath):
+        return skipped_media
+
+    try:
+        with open(details_filepath, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                parts = line.split(" | ")
+                if len(parts) >= 4:
+                    url = parts[2].strip()
+                    error_type = parts[3].strip()
+                    if error_type in SKIP_ERROR_TYPES:
+                        if url in skipped_media and error_type not in skipped_media[url]:
+                            skipped_media[url] = f"{skipped_media[url]}, {error_type}"
+                        else:
+                            skipped_media[url] = error_type
+    except Exception as e:
+        logger.warning(
+            f"No se pudo cargar la lista de medios a omitir desde {details_filepath}: {e}"
+        )
+
+    return skipped_media
 
 
 # Configuración de base de datos y workers
@@ -290,14 +332,41 @@ def run_extraction(json_filepath: str = "medios_list.json") -> None:
         logger.critical(f"No se pudo cargar el archivo JSON de medios: {e}")
         return
 
+    # Carga de medios a omitir según failed_media_details.txt
+    failed_media_to_skip = load_failed_media_to_skip()
+    if failed_media_to_skip:
+        logger.info(
+            f"Se identificaron {len(failed_media_to_skip)} medios únicos a omitir por fallos previos."
+        )
+
+    tasks = []
+    skipped_count = 0
+    for country, urls in media_dict.items():
+        for url in urls:
+            cleaned_url = url.strip()
+            if cleaned_url in failed_media_to_skip:
+                skipped_count += 1
+                logger.info(
+                    f"[{country.upper()}] Saltando {cleaned_url} "
+                    f"(fallo previo registrado: {failed_media_to_skip[cleaned_url]})"
+                )
+            else:
+                tasks.append((country, cleaned_url))
+
+    total_media = sum(len(urls) for urls in media_dict.values())
+    logger.info(
+        f"Medios en JSON: {total_media} | "
+        f"Omitidos por fallas previas: {skipped_count} | "
+        f"A procesar: {len(tasks)}"
+    )
+
     with ConnectionPool(conninfo=DB_CONNINFO, min_size=2, max_size=MAX_WORKERS) as pool:
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
 
-            # Lanzamos todas las URLs como tareas independientes
+            # Lanzamos todas las URLs válidas como tareas independientes
             futures = {
                 executor.submit(process_url, country, url, pool): (country, url)
-                for country, urls in media_dict.items()
-                for url in urls
+                for country, url in tasks
             }
 
             for future in as_completed(futures):
